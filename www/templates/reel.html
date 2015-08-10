@@ -1,0 +1,48 @@
+<ion-view view-title="Reel Detail">
+  <ion-content>
+    <div class="list card">
+
+      <div class="item item-avatar">
+        <img src="http://www.greenend.org.uk/rjk/junk/avatar-small.png" width="30" height="30">
+        <h2> {{ reel.Title }} </h2>
+        <p>{{ reel.timestamp }}</p>
+      </div>
+
+      <div class="item" >
+        <h1>{{reel.title}}</h1>
+        <h2><b>With			: {{reel.coview}}</b></h2>
+        <h3>Date and Time 	: {{reel.timestamp}}</h3>
+        <h3>Location		: {{reel.location}}</h3>
+      </div>
+
+      <div class="item item-image">
+        <img src="{{ poster }}">
+      </div>
+
+      <div class="item item-body">
+        <h2>More about: {{reel.Title}}</h2>
+        <h3>Cast:- {{reel.Actors}}. Director:- {{reel.Director}}. Genre:- {{reel.Genre}}. Runtime:- {{reel.Runtime}}</h3>
+        <p>{{reel.Plot}}</p>
+      </div>
+
+      <div class="item tabs tabs-secondary tabs-icon-left">
+        <a class="tab-item">
+          <i class="icon ion-star"></i>
+          Favorite
+        </a>
+        <a class="tab-item">
+          <i class="icon ion-thumbsup"></i>
+          67%
+        </a>
+        <a class="tab-item">
+          <i class="icon ion-flag"></i>
+          Watched
+        </a>
+        <a class="tab-item">
+          <i class="icon ion-bookmark"></i>
+          Bookmark
+        </a>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

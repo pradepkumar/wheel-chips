@@ -1,0 +1,19 @@
+<ion-view view-title="Search New">
+  <ion-content>
+    <div class="list list-inset">
+      <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" placeholder="Search" ng-model="searchtext">
+      </label>
+    </div>
+
+    <div class="list">
+      <a class="item item-thumbnail-left" ng-repeat="result in searchres" href="#/app/reels/{{result.imdbID}}">
+        <img src="http://static.tvtropes.org/pmwiki/pub/images/Avatar_Press_logo_7617.gif">
+        <h2>{{result.Title}}</h2>
+        <h4>{{result.Year}}</h4>
+      </a>
+    </div>
+
+  </ion-content>
+</ion-view>
